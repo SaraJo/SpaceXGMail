@@ -1,0 +1,16 @@
+{
+  "name": "Space X GMail",
+  "version": "1.2.8",
+  "all_frames" : "false",
+  "description": "supercharge your inbox",
+  "content_scripts": [ 
+    	{
+    	  "js": ["js/keymaster.js", "js/jquery-1.7.2.min.js", "js/spaceX.js", "js/sara.js", "js/insert.js"],
+    	  "matches": [ "<all_urls>" ],
+    	  "run_at" : "document_end",
+    	  "all_frames": true
+      }],
+  "permissions": [
+"https://*.google.*", "http://*.google.*"
+  ]
+}
