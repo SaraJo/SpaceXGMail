@@ -10,6 +10,7 @@
     	  "all_frames": true
       }],
   "permissions": [
-"https://*.google.*", "http://*.google.*"
-  ]
+"https://*.google.com/", "http://*.google.com/"
+  ],
+  "manifest_version": 2
 }
