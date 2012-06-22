@@ -1,7 +1,6 @@
 {
   "name": "Space X GMail",
   "version": "1.2.8",
-  "all_frames" : "false",
   "description": "supercharge your inbox",
   "content_scripts": [ 
     	{
