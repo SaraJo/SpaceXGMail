@@ -2,23 +2,17 @@
 spaceX = {
 };
    
-spaceX.findUnread = function(){
-  return $('td.xY > div > span:not(.zF)').parents('tr');
-}
+spaceX.findUnread = () => $('td.xY > div > span:not(.zF)').parents('tr')
 
-spaceX.findRead = function(){
-  return $('span.zF');
-}
-spaceX.searchContent = function(term){
-  return $('td.xY:contains('+ term + ')')
-}
+spaceX.findRead = () => $('span.zF')
+spaceX.searchContent = term => $('td.xY:contains('+ term + ')')
 
-spaceX.compose = function(){
+spaceX.compose = () => {
   var compose = $('div.T-I.J-J5-Ji.T-I-KE')[0];
  	spaceX.simulateClick(compose);
 }
 
-spaceX.simulateClick = function(item){
+spaceX.simulateClick = item => {
     var button = item;
     console.log(item);
     click = document.createEvent("MouseEvents");
@@ -29,7 +23,7 @@ spaceX.simulateClick = function(item){
     button.dispatchEvent(click);
 }
 
-spaceX.getGmailFrame = function(){
+spaceX.getGmailFrame = () => {
   	var b = document.getElementById("canvas_frame");
   return b;		
 }
